@@ -15,6 +15,7 @@ body {
   padding: 50px;
   margin: auto;
   min-width: 280px;
+  min-height: 500px;
   /* flex-wrap: wrap; */
 }
 /* login right side  */
@@ -69,25 +70,24 @@ body {
 /* ---------------------------------------------------------------- */
 /* login right side */
 .login_right {
-  height: 100%;
-  max-height: 700px;
   width: 50%;
-  max-width: 500px;
+  max-width: 400px;
   border: 1px solid var(--green);
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
   padding: 40px;
 }
 .inputs {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   gap: 7px;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .inputs > input {
   width: 100%;
@@ -141,11 +141,11 @@ body {
   width: 100%;
   max-width: 350px;
   display: flex;
-  font-size: 1em;
+  font-size: 0.8em;
   justify-content: space-between;
   align-items: self-end;
   text-wrap: nowrap;
-  flex-wrap: wrap;
+  gap: 5px;
   /* flex-wrap: wrap; */
 }
 .forget > :nth-child(2) {
@@ -165,6 +165,7 @@ body {
 .error {
   color: red;
   font-size: 0.8em;
+  width: 100%;
 }
 .input-body {
   display: flex;
@@ -201,7 +202,7 @@ body {
   }
   .forget {
     gap: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     font-size: 0.8em;
   }
 }
