@@ -1,0 +1,207 @@
+/* --brandcolor : 00B208; */
+:root {
+  --green: #00b208;
+  --white: white;
+}
+body {
+  background-color: black;
+}
+.login {
+  height: 100vh;
+  display: flex;
+  max-width: 1400px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  margin: auto;
+  min-width: 280px;
+  /* flex-wrap: wrap; */
+}
+/* login right side  */
+.login_left {
+  height: 100%;
+  max-height: 900px;
+  display: flex;
+  width: 50%;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.login_left > .logo {
+  position: absolute;
+  top: 0;
+  font-size: 2em;
+  font-weight: 900;
+  color: var(--green);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content > h1 {
+  font-size: 6em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px var(--green);
+}
+.quotes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.quotes > h4 {
+  color: white;
+  font-size: 1.4em;
+  word-spacing: 10px;
+  letter-spacing: 4px;
+}
+.quotes > h4 > span {
+  background-color: var(--green);
+  font-weight: 300;
+  font-size: 0.8em;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+.quotes > p {
+  color: var(--white);
+  font-size: 1em;
+}
+/* ---------------------------------------------------------------- */
+/* login right side */
+.login_right {
+  height: 100%;
+  max-height: 700px;
+  width: 50%;
+  max-width: 500px;
+  border: 1px solid var(--green);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.inputs {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 7px;
+  justify-content: flex-start;
+}
+.inputs > input {
+  width: 100%;
+  max-width: 350px;
+  background-color: black;
+  padding: 10px;
+  color: var(--white);
+  border: 1px solid var(--green);
+  border-radius: 7px;
+}
+.inputs > button {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px;
+  border-radius: 7px;
+  color: var(--white);
+  background-color: var(--green);
+  border: none;
+  margin-top: 20px;
+}
+.login_sign {
+  display: flex;
+  font-size: 1.5em;
+  text-decoration: none;
+  gap: 60px;
+  padding: 0px 10px;
+  position: relative;
+  justify-content: center;
+}
+.login_sign a {
+  text-decoration: none;
+  color: white;
+  text-wrap: nowrap;
+}
+.toggle_bottom {
+  height: 2px;
+  width: 100%;
+  background-color: var(--green);
+  position: absolute;
+  bottom: -2px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.toggle_bottom> div{
+  height: 100%;
+  width: 50%;
+  background-color: var(--white);
+  border-radius: 2px;
+}
+.forget {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  font-size: 1em;
+  justify-content: space-between;
+  align-items: self-end;
+  text-wrap: nowrap;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+}
+.forget > :nth-child(2) {
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+.forget a {
+  text-decoration: none;
+  color: #0075ff;
+}
+.forget > a {
+  color: red;
+}
+
+/* error */
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+.input-body {
+  display: flex;
+}
+
+/* // media query */
+
+@media screen and (max-width: 880px) {
+  .login {
+    flex-direction: column;
+    /* gap: 10px; */
+    padding: 10px;
+    gap: 5px;
+  }
+  .login_left {
+    width: 100%;
+    min-height: 350px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .content > h1 {
+    font-size: 4em;
+  }
+  .login_sign {
+    font-size: 1.2em;
+  }
+  .login_right {
+    gap: 30px;
+    width: 100%;
+  }
+  .error {
+    font-size: 0.8em;
+  }
+  .forget {
+    gap: 20px;
+    flex-wrap: nowrap;
+    font-size: 0.8em;
+  }
+}
