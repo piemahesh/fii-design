@@ -182,7 +182,6 @@ body {
   }
   .login_left {
     width: 100%;
-    min-height: 350px;
     padding: 5px;
     align-items: center;
     justify-content: center;
